@@ -1,1 +1,58 @@
-style.css
+Style · CSS
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, Helvetica, sans-serif; color: #333; background: #fff; }
+ul { list-style: none; }
+a { text-decoration: none; color: inherit; }
+ 
+/* ---------- Page 1: Dinner is Served ---------- */
+.dinner { --teal: #62b8ad; max-width: 1100px; margin: 0 auto; padding: 0 12px; }
+ 
+.topnav {
+  background: var(--teal);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 16px; flex-wrap: wrap; gap: 8px;
+}
+.topnav ul { display: flex; gap: 28px; flex: 1; justify-content: center; flex-wrap: wrap; }
+.topnav a { font-size: 10px; font-weight: 700; text-transform: uppercase; color: #111; }
+.topnav a.active { color: #4a8a82; }
+.topnav .fb { font-weight: 700; font-size: 13px; }
+ 
+.dinner-logo {
+  background: var(--teal); width: 180px; height: 90px; margin: 18px auto 24px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  color: #fff; text-align: center;
+}
+.logo-name { font-family: Georgia, serif; letter-spacing: 4px; font-size: 11px; text-transform: uppercase; margin-top: 4px; }
+.logo-sub { font-family: Georgia, serif; letter-spacing: 2px; font-size: 7px; text-transform: uppercase; }
+ 
+.dinner-intro { text-align: center; color: #999; font-size: 11px; line-height: 1.8; }
+.dinner-intro p { margin: 0 auto 14px; max-width: 700px; }
+ 
+.hero { width: min(580px, 100%); margin: 16px auto 0; }
+.hero svg { display: block; width: 100%; height: auto; }
+ 
+/* ---------- Page 2: Abundance Pulse ---------- */
+.pulse { max-width: 1100px; margin: 0 auto; padding: 16px 12px 0; }
+ 
+.pulse-head { text-align: center; }
+.kdo {
+  font-family: Georgia, serif; font-weight: 900; font-size: 52px; letter-spacing: 2px;
+  color: #e9a4b0; -webkit-text-stroke: 2px #3a1e24; line-height: 1;
+}
+.kdo sup { font-size: 10px; -webkit-text-stroke: 0; color: #3a1e24; }
+.tagline { font-size: 9px; color: #666; margin: 10px 0 14px; }
+.pulse-head ul { display: flex; justify-content: center; gap: 30px; margin-bottom: 14px; flex-wrap: wrap; }
+.pulse-head a { font-size: 9px; color: #555; }
+ 
+.pink-area { background: #e2a0ae; padding: 36px 150px 0; display: flex; justify-content: center; }
+.card { background: #fff; width: 100%; max-width: 520px; padding: 16px 12px 20px; }
+.card h1 { font-size: 22px; color: #111; margin-bottom: 12px; }
+.card h2 { font-size: 11px; color: #222; margin: 14px 0 8px; }
+.card .small { font-size: 8px; line-height: 1.8; color: #777; margin-bottom: 8px; }
+.card .small a { color: #444; }
+ 
+@media (max-width: 700px) {
+  .pink-area { padding: 20px 12px 0; }
+  .topnav ul { gap: 14px; }
+}
+ 
